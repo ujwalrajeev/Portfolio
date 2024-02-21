@@ -72,7 +72,7 @@ export const APP_SOURCE_CODE_LINK = [
   "",
   "",
   "https://github.com/ujwalrajeev/Rumour-Detection",
-  "",
+  "https://github.com/ujwalrajeev/Portfolio",
 ];
 
 export const IMAGE_NAMES = [
