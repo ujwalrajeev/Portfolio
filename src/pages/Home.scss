@@ -1,0 +1,378 @@
+.home-container {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: fit-content;
+  font-family: "Roobert-Regular", sans-serif;
+  color: white;
+  gap: 20vh;
+
+  .home-top-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    font-size: 0.9vw;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    padding: 1.5vh 0 1.5vh 0;
+
+    .home-top-middle-part {
+      display: flex;
+      gap: 15%;
+
+      > p {
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      > p:hover {
+        font-size: 1.5vw;
+        color: #e36da0;
+      }
+    }
+
+    > p {
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    > p:hover {
+      font-size: 1.5vw;
+      color: #e36da0;
+    }
+  }
+
+  .home-first-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../public/assets/images/background_image_5.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 3%;
+    padding: 18vh 0 18vh 0;
+
+    .home-top-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 60%;
+
+      > p {
+        font-size: 2vw;
+      }
+
+      > img {
+        width: 6vw;
+        height: auto;
+      }
+    }
+  }
+
+  .home-second-part {
+    display: flex;
+    width: 60%;
+    height: fit-content;
+    gap: 10vw;
+
+    .home-second-left {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      gap: 2vh;
+      font-size: 1vw;
+    }
+
+    .home-second-right {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5vh;
+
+      .second-right-subpart-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+
+        .subpart-heading {
+          font-size: 0.8vw;
+          color: gray;
+        }
+
+        .subpart-details {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5vh;
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+
+  .home-third-part {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: fit-content;
+    gap: 5vw;
+
+    > p {
+      font-size: 3.6vw;
+    }
+
+    .games-container {
+      display: flex;
+      flex-direction: column;
+
+      .game-and-detail {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+
+        > img {
+          border-radius: 10px;
+        }
+
+        .game-title-and-description {
+          display: flex;
+          gap: 2vw;
+
+          .title-and-download-button {
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+
+            .game-title {
+              font-size: 2.2vw;
+              width: 100%;
+            }
+
+            .download-button {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: fit-content;
+              height: fit-content;
+              padding: 0.2vh 0.4vw 0.2vh 0.4vw;
+              background-color: #e36da0;
+              border-radius: 4px;
+              font-size: 1.3vw;
+              cursor: pointer;
+              transition: all 0.3s ease-in-out;
+            }
+
+            .download-button:hover {
+              background-color: #e36da0;
+              font-size: 1.6vw;
+              cursor: pointer;
+            }
+          }
+
+          .game-description-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+
+            .game-description {
+              font-size: 1.2vw;
+            }
+
+            .game-details {
+              display: flex;
+              flex-direction: column;
+              gap: 1vh;
+
+              .game-detail {
+                display: flex;
+                gap: 1vw;
+                font-size: 0.8vw;
+
+                .detail-header {
+                  color: gray;
+                  width: 10%;
+                }
+              }
+            }
+
+            .game-disclaimer {
+              font-size: 0.7vw;
+              color: gray;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .home-fourth-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    gap: 5vw;
+
+    > p {
+      width: 60%;
+      font-size: 3.6vw;
+    }
+
+    .apps-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5vw;
+      width: 100%;
+
+      > img {
+        width: 2vw;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      > img:hover {
+        width: 3vw;
+      }
+
+      .apps {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+
+        .app-and-detail {
+          display: flex;
+          flex-direction: column;
+          gap: 3vh;
+
+          .artwork {
+            width: 30vw;
+            height: auto;
+          }
+
+          > img {
+            border-radius: 10px;
+          }
+
+          .app-title-and-description {
+            display: flex;
+            gap: 2vw;
+
+            .title-and-download-button {
+              display: flex;
+              flex-direction: column;
+              gap: 2vh;
+
+              .app-title {
+                font-size: 2.2vw;
+                width: 100%;
+              }
+
+              .download-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: fit-content;
+                height: fit-content;
+                padding: 0.2vh 0.4vw 0.2vh 0.4vw;
+                background-color: #e36da0;
+                border-radius: 4px;
+                font-size: 1.3vw;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+              }
+
+              .download-button:hover {
+                background-color: #e36da0;
+                font-size: 1.6vw;
+                cursor: pointer;
+              }
+
+              .github-button {
+                text-decoration: underline;
+                cursor: pointer;
+              }
+            }
+
+            .app-description-container {
+              display: flex;
+              flex-direction: column;
+              gap: 2vh;
+
+              .app-description {
+                font-size: 1.2vw;
+              }
+
+              .app-details {
+                display: flex;
+                flex-direction: column;
+                gap: 1vh;
+
+                .app-detail {
+                  display: flex;
+                  gap: 2vw;
+                  font-size: 0.8vw;
+
+                  .detail-header {
+                    color: gray;
+                    width: 10%;
+                  }
+                }
+              }
+
+              .app-disclaimer {
+                font-size: 0.7vw;
+                color: gray;
+              }
+            }
+          }
+        }
+      }
+
+      .art {
+        width: 30%;
+      }
+    }
+  }
+
+  .home-last-text {
+    margin-bottom: 5vh;
+  }
+
+  .explore-more-button {
+    font-size: 1vw;
+    color: #e36da0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .explore-more-button:hover {
+    font-size: 2vw;
+    cursor: pointer;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
